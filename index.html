@@ -4,6 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vibeloupe — Learning Fast >>> Shipping Fast</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vibeloupe — Learning Fast >>> Shipping Fast">
+  <meta property="og:description" content="Everyone is building faster with AI tools. Only Vibeloupe helps you Build The Right Thing. The Build-Measure-Learn loop, built into your IDE.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vibeloupe.com">
+  <meta property="og:image" content="https://vibeloupe.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Vibeloupe">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vibeloupe — Learning Fast >>> Shipping Fast">
+  <meta name="twitter:description" content="Everyone is building faster with AI tools. Only Vibeloupe helps you Build The Right Thing.">
+  <meta name="twitter:image" content="https://vibeloupe.com/og-image.png">
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,12 +101,12 @@
     .hero {
       min-height: 100vh; display: flex; flex-direction: column;
       justify-content: center; align-items: stretch;
-      padding: 40px 40px 64px; position: relative; overflow: hidden;
+      padding: 40px 0 64px; position: relative; overflow: hidden;
       background-color: #F0EEE6;
     }
 
     .hero-layout {
-      max-width: 1200px; margin: 0 auto; width: 100%;
+      max-width: 1200px; margin: 0 auto; padding: 0 40px;
       display: grid; grid-template-columns: 1fr 1fr;
       gap: 64px; align-items: center; position: relative; z-index: 1;
     }
@@ -386,7 +403,8 @@
     }
     @media (max-width: 640px) {
       .nav-inner { padding: 0 20px; }
-      .hero { padding: 80px 24px 64px; }
+      .hero { padding: 80px 0 64px; }
+      .hero-layout { padding: 0 24px; }
       .features { padding: 80px 24px; }
       .manifesto { padding: 80px 24px; }
       .loop-section { padding: 80px 24px; }
@@ -420,7 +438,7 @@
 <section class="hero">
   <div class="hero-layout">
     <div class="hero-inner">
-      <p class="eyebrow">Product intelligence for builders</p>
+      <p class="eyebrow">Product insight for builders</p>
       <h1 class="hero-headline">
         <span class="line1">learning fast</span>
         <span class="arrows">&gt;&gt;&gt;</span>
